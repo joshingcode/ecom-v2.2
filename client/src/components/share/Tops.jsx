@@ -10,9 +10,9 @@ useEffect(()=>{
 
   return (
     <>
-    <figure className="features" >
+    <figure key={tops.id} className="features" >
         {tops.map(x => <article>
-            <a className='image'><img src={x.img}/></a>
+            <a  className='image'><img src={x.img}/></a>
             <h3 className='major'>{x.title}-{x.price}</h3>
             <p>{x.description}</p>
             <a className='special'>Buy Now</a>

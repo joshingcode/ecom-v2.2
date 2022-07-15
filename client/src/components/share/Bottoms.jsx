@@ -10,7 +10,7 @@ useEffect(()=>{
 
   return (
     <>
-    <figure className="features">
+    <figure key={bottoms.id} className="features">
     {bottoms.map(x => <article>
             <a className='image'><img src={x.img}/></a>
             <h3 className='major'>{x.title}-{x.price}</h3>
